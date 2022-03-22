@@ -22,7 +22,7 @@ function App() {
          <div className='esim'>
          <img src={paper} alt="" id='paper'/>
          <img src={compChoosen} alt="" id='paper'/>
-         <h1>{compChoosen==paper && compChoosen!=scissors && compChoosen!=rock ? "it is drow" : ""}</h1>
+         <h1>{compChoosen==paper && compChoosen!=scissors && compChoosen!=rock ? "it is draw" : ""}</h1>
          <h1>{compChoosen==scissors && compChoosen!=paper ? "you lose" : ""}</h1>
          <h1>{compChoosen!=paper && compChoosen!=scissors && compChoosen==rock ? "you are win" : ""}</h1>
          <button value="again" onClick={handleChoose} id="btnAgain">Play again</button>
@@ -34,7 +34,7 @@ function App() {
           <div className='esim'>
           <img src={rock} alt="" id='rock'/>
           <img src={compChoosen} alt="" id='paper'/>
-          <h1>{compChoosen==rock && compChoosen!=scissors && compChoosen!=paper ? "it is drow" : ""}</h1>
+          <h1>{compChoosen==rock && compChoosen!=scissors && compChoosen!=paper ? "it is draw" : ""}</h1>
           <h1>{compChoosen==paper && compChoosen!=scissors ? "you lose" : ""}</h1>
           <h1>{compChoosen!=rock && compChoosen!=paper && compChoosen==scissors ? "you are win" : ""}</h1>
           <button value="again" onClick={handleChoose} id="btnAgain">Play again</button>
@@ -45,7 +45,7 @@ function App() {
             <div className='esim'>
             <img src={scissors} alt="" id='scissors'/>
             <img src={compChoosen} alt="" id='paper'/>
-            <h1>{compChoosen==scissors && compChoosen!=paper && compChoosen!=rock ? "it is drow" : ""}</h1>
+            <h1>{compChoosen==scissors && compChoosen!=paper && compChoosen!=rock ? "it is draw" : ""}</h1>
             <h1>{compChoosen==rock && compChoosen!=scissors ? "you lose" : ""}</h1>
             <h1>{compChoosen!=scissors && compChoosen!=rock && compChoosen==paper ? "you are win" : ""}</h1>
             <button value="again" onClick={handleChoose} id="btnAgain">Play again</button>
